@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+  <header>
+      <ul>
+        <li><b>Author: Ruslan Karamutdinov. PI-b-o-182(1)</b></li>
+        <li><a href="https://vk.com/yan.aiexeev"> <img src = "images/vk.png" alt = "VK link"></a></li>
+        <li><a href="https://codepen.io/somemadcoder"> <img src = "images/codepen.png" alt = "CodePen link"></a></li>
+      </ul>
+  </header>
+    <div id="game">
+      <div class="main_area">
+        <div id="next-figure"></div>
+        <div class="text_container">
+          <div>Level: <span id="level">0</span></div>
+          <div>Score: <span id="score">0</span></div>
+        </div>
+  
+        <div class="playingfield"></div>
+      </div>
+
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+      </div>
+    
+      <div id="game-over">Game over</div>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

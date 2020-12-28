@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:  linear-gradient(20deg, #f92056 10%, #00deff 85%);
+  min-height: 100vh;
+}
+header{
+  border-bottom: 2px solid transparent;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  min-height: 80px;
+  background-color: #0000006e;
+  align-items: center;
+}
+header li{
+  display: flex;
+  color: white;
+  text-align: center;
+  list-style-type:none;
+  margin: auto;
+  padding: 0 10px;
+  width: 30vh;
+  max-height: 100%;
+}
+header li img{
+  max-height: 64px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+a{
+  margin: auto;
+}
+header li b{
+  font-size: 16pt;
+  padding: auto;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: rgba(20, 20, 20, 0.8) 1px 0 10px;
+}
+ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+ul, header ul{
+  height: 100%;
+}
+#level, #score, #game-over{
+  font-family: sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  background: #2E2F45;
+  display: table;
+  margin: 20px auto;
+  color: white;
+  border-radius: 5px;
+  mix-blend-mode: multiply;
+  padding: 5px 10px;
+}
+
+.main_area {
+  position: relative;
+}
+.text_container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-120%, -50%);
+}
+#next-figure {
+  position: absolute;
+  font-size: 0;
+  top: 200px;
+  left: 200px;
+  transform: translate(135%, -135%);
+}
+#game {
+  padding-top: 20px;
+  font-size: 40px;
+  width: 320px;
+  margin: auto;
+  text-align: center;
+  color: #000000;
+}
+
+.playingfield {
+  width: 320px;
+  height: 620px;
+  border: 10px double #fabc11;
+  font-size: 0;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #be931d;
+  display: inline-block;
+}
+
+.movingCell {
+  background-color: blue;
+}
+
+.fixedCell {
+  background-color: rgb(79, 80, 74);
+}
+#game-over {
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  border: none;
+  color: #fff;
+  background: #90ca09;
+  padding: 10px 20px;
+  outline: none;
+} 
