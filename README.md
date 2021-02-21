@@ -1,2 +1,1 @@
-#Tetris
-someMadCoder.github.io
+#someMadCoder.github.io
